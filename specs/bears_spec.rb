@@ -13,4 +13,7 @@ require_relative("../fish.rb")
     assert_equal("John", @bear.bear_name())
   end
 
+  def test_get_fish
+    assert_equal(, @bear.bear_name())
+  end
 end
