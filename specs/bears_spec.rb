@@ -10,6 +10,4 @@ require_relative("../fish.rb")
   end
 
 
-
-
 end
