@@ -7,4 +7,8 @@ class River
       @amount_of_fish = amount_of_fish
   end
 
+  def lose_fish(fish_eaten)
+  @amount_of_fish -= fish_eaten
+  end
+
 end

@@ -18,6 +18,12 @@ require_relative("../fish.rb")
     assert_equal(30, @river.amount_of_fish())
   end
 
+  def test_lose_fish
+    @river.lose_fish(1)
+    assert_equal(29, @river.amount_of_fish())
+  end
+
+
 
 
 
