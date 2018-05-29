@@ -9,5 +9,8 @@ require_relative("../fish.rb")
     @bear = Bear.new("John", "Panda", [])
   end
 
+  def test_get_bear_name
+    assert_equal("John", @bear.bear_name())
+  end
 
 end
