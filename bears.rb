@@ -8,6 +8,11 @@ class Bear
       @stomach = []
   end
 
-  
+  def get_fish(fish)
+      @stomach.push(fish)
+  end
+
+
+
 
 end

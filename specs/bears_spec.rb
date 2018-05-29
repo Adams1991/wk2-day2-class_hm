@@ -7,6 +7,8 @@ require_relative("../fish.rb")
 
   def setup
     @bear = Bear.new("John", "Panda", [])
+    @river = River.new("Amazon", [])
+    @fish = Fish.new("Bob")
   end
 
   def test_get_bear_name
@@ -14,6 +16,11 @@ require_relative("../fish.rb")
   end
 
   def test_get_fish
-    assert_equal(, @bear.bear_name())
+    @river.add_fish(@fish)
+    @bear.get_fish(@fish)
+    @river.lose_fish(@fish)
+    assert_equal(0, @river.amount_of_fish.count())
+    assert_equal(1, @bear.stomach.count())
   end
+
 end
