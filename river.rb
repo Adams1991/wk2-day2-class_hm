@@ -11,8 +11,10 @@ class River
     @amount_of_fish.push(fish)
   end
 
-  # def lose_fish(fish_eaten)
-  # @amount_of_fish
-  # end
+  def lose_fish(fish_eaten)
+   eaten = @amount_of_fish.index(fish_eaten)
+   @amount_of_fish.delete_at(eaten)
+  end
+
 
 end
