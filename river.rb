@@ -16,5 +16,10 @@ class River
    @amount_of_fish.delete_at(eaten)
   end
 
+  def river_fish_count
+
+  @amount_of_fish.count()  
+
+  end
 
 end

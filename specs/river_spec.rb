@@ -23,10 +23,12 @@ require_relative("../fish.rb")
   def test_lose_fish
     @river.add_fish(@fish)
     @river.lose_fish(@fish)
-    assert_equal(0, @river.amount_of_fish().count())
+    assert_equal(0, @river.river_fish_count)
   end
 
-
+  def test_river_fish_count
+    assert_equal(0, @river.river_fish_count)
+  end
 
 
 
