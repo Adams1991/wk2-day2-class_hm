@@ -23,4 +23,8 @@ require_relative("../fish.rb")
     assert_equal(1, @bear.stomach.count())
   end
 
+  def test_bear_roar
+      assert_equal("Roar", @bear.bear_roar)
+  end
+
 end
