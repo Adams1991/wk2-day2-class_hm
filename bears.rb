@@ -16,6 +16,10 @@ class Bear
     "Roar"
   end
 
+  def bear_food_count
+    @stomach.count()
+  end
+
 
 
 

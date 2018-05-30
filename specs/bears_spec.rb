@@ -20,11 +20,15 @@ require_relative("../fish.rb")
     @bear.get_fish(@fish)
     @river.lose_fish(@fish)
     assert_equal(0, @river.amount_of_fish.count())
-    assert_equal(1, @bear.stomach.count())
+    assert_equal(1, @bear.bear_food_count)
   end
 
   def test_bear_roar
       assert_equal("Roar", @bear.bear_roar)
+  end
+
+  def test_bear_food_count
+    assert_equal(0, @bear.bear_food_count)
   end
 
 end
